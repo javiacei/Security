@@ -14,13 +14,6 @@ namespace Symfony\Component\Security\Acl\Model;
 interface BaseEntryInterface
 {
     /**
-     * The ACL this ACE is associated with.
-     * 
-     * @return AclInterface
-     */
-    public function getAcl();
-
-    /**
      * The permission mask of this ACE
      *
      * @return integer

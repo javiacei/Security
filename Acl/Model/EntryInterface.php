@@ -18,8 +18,10 @@ namespace Symfony\Component\Security\Acl\Model;
  * allow client modification.
  *
  * @author Johannes M. Schmitt <schmittjoh@gmail.com>
+ *
+ * @TODO re-extends \Serializable
  */
-interface EntryInterface extends BaseEntryInterface, \Serializable
+interface EntryInterface extends BaseEntryInterface
 {
     /**
      * The primary key of this ACE
@@ -27,4 +29,11 @@ interface EntryInterface extends BaseEntryInterface, \Serializable
      * @return integer
      */
     public function getId();
+
+    /**
+     * The ACL this ACE is associated with.
+     *
+     * @return AclInterface
+     */
+    public function getAcl();
 }
