@@ -11,7 +11,7 @@ namespace Symfony\Component\Security\Acl\Model;
  *
  * @author Charles Bouchard-Légaré <cblegare@idealtechnology.net>
  */
-interface BaseEntryInterface
+interface BaseEntryInterface extends \Serializable
 {
     /**
      * The permission mask of this ACE
